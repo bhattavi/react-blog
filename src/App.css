@@ -1,3 +1,22 @@
-.App {
-    text-align: center;
+.parent {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.left {
+    flex-grow: 1;
+    flex-basis: 3;
+}
+
+.right {
+    margin-left: auto;
+    height: 100%;
+    flex-basis: 1;
+}
+
+nav {
+    height: 100%;
+    background-color: grey;
+    margin-top: 5px;
 }
