@@ -1,22 +1,23 @@
+Html,
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .parent {
+    margin: 20px;
+    height: 100%;
     display: flex;
-    align-items: center;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.left {
-    flex-grow: 1;
-    flex-basis: 3;
-}
+.left {}
 
-.right {
-    margin-left: auto;
-    height: 100%;
-    flex-basis: 1;
-}
+.right {}
 
-nav {
-    height: 100%;
-    background-color: grey;
-    margin-top: 5px;
+.App {
+    margin-top: 50px;
 }
