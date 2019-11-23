@@ -19,5 +19,11 @@ body {
 .right {}
 
 .App {
-    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.myLinks:hover {
+    transition: 0.7s;
+    color: #F69680;
+    text-decoration: underline;
 }

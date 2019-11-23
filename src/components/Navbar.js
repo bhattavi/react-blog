@@ -31,27 +31,27 @@ class Navbar extends React.Component {
             loading: true
         })
 
-        const random = Math.floor(Math.random() * 20)
+
         const arr = [];
         while (arr.length < 8) {
             const r = Math.floor(Math.random() * 20);
             if (arr.indexOf(r) === -1) arr.push(r);
         }
-        console.log(arr);
+
         await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`)
             .then(response => response.json()).then(data => {
 
-                console.log('New Data: ', data)
+
 
                 if (this.state.news1 !== undefined) {
                     this.setState({
                         loading: false,
-                        news1: data.articles[random] && data.articles[arr[1]].title,
-                        news2: data.articles[random] && data.articles[arr[2]].title,
-                        news3: data.articles[random] && data.articles[arr[3]].title,
-                        news4: data.articles[random] && data.articles[arr[4]].title,
-                        news5: data.articles[random] && data.articles[arr[5]].title,
-                        news6: data.articles[random] && data.articles[arr[6]].title,
+                        news1: data.articles[arr[1]] && data.articles[arr[1]].title,
+                        news2: data.articles[arr[2]] && data.articles[arr[2]].title,
+                        news3: data.articles[arr[3]] && data.articles[arr[3]].title,
+                        news4: data.articles[arr[4]] && data.articles[arr[4]].title,
+                        news5: data.articles[arr[5]] && data.articles[arr[5]].title,
+                        news6: data.articles[arr[6]] && data.articles[arr[6]].title,
 
 
 
@@ -82,8 +82,8 @@ class Navbar extends React.Component {
 
 
             <nav className="container" >
-                <div className="" >
-                    <ul className="list-group"
+                <div className="border border-primary" >
+                    <ul className="list-group border border-primary"
                         style={
                             { width: "300px" }
                         } >
@@ -99,7 +99,7 @@ class Navbar extends React.Component {
                             <span className="text-dark" > News </span>
 
                         </h4></li > {
-                            this.state.loading ? < h4 className="list-group-item" > Loading.... </h4> :
+                            this.state.loading ? < h4 className="list-group-item" style={{ textAlign: "center" }}> Loading.... </h4> :
                                 <ul className="list-group-item" >
                                     <li className="list-group-item text-primary" > < h6 > {this.state.news1} </h6></li >
                                     <li className="list-group-item text-danger" > < h6 > {this.state.news2} </h6></li >

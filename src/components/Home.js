@@ -23,18 +23,18 @@ class Home extends React.Component {
       return (
 
         <div className="container" key={blog.id}>
-          <div className="">
-            <img className="card-img-top img-thumbnail" src={blog.blogListImg} alt="Card image cap" />
-            <div className="card-body">
-              <Link to={'/' + blog.id}>
-                <span className="card-title"><h2>{blog.name}</h2></span>
-              </Link>
-              <h5>Author: {blog.author}</h5>
-              <h6 className="card-subtitle mb-2 text-muted">Date Posted: {blog.date}</h6>
-              <p className="card-title">{blog.summary}</p>
-            </div>
+
+          <img className="card-img-top img-thumbnail" src={blog.blogListImg} alt="Card image cap" />
+          <div className="card-body">
+            <Link className="myLinks" to={'/' + blog.id}>
+              <span className="card-title text-dark"><h2>{blog.name}</h2></span>
+            </Link>
+            <h5>Author: {blog.author}</h5>
+            <h6 className="card-subtitle mb-2 text-muted">Date Posted: {blog.date}</h6>
+            <p className="card-title">{blog.summary}</p>
           </div>
         </div>
+
       )
     })) : (<div className="center">No Blogs yet</div>)
 
@@ -42,18 +42,18 @@ class Home extends React.Component {
       <div>
         {<Header />}
         {<Jumbotron />}
-      <div className="container">
-        <div className="parent">
-          <div className="left">
-            {blogList}
+        <div className="container">
+          <div className="parent">
+            <div className="left">
+              {blogList}
+            </div>
+            <div className="right">
+              {<Navbar />}
+            </div>
           </div>
-          <div className="right">
-            {<Navbar />}
-          </div>
+          {<Footer />}
         </div>
-            {<Footer />}
-        </div>
-        
+
       </div>
     )
 

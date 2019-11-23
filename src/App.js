@@ -10,16 +10,16 @@ class App extends React.Component {
 
   render() {
     return (
-      
-        <BrowserRouter>
-          <div className="App">
 
-            <Route exact path='/' component={Home} />
-            <Route path='/:blog' component={Blog} />
+      <BrowserRouter>
+        <div className="App bg-light">
 
-          </div>
-        </BrowserRouter>
-      
+          <Route exact path='/' component={Home} />
+          <Route path='/:blog' component={Blog} />
+
+        </div>
+      </BrowserRouter>
+
     );
   }
 
