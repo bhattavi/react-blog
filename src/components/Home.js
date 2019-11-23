@@ -24,7 +24,7 @@ class Home extends React.Component {
 
         <div className="container" key={blog.id}>
 
-          <img className="card-img-top img-thumbnail" src={blog.blogListImg} alt="Card image cap" />
+          <img className="card-img-top img-thumbnail" src={blog.blogListImg} alt="blog imagegit " />
           <div className="card-body">
             <Link className="myLinks" to={'/' + blog.id}>
               <span className="card-title text-dark"><h2>{blog.name}</h2></span>

@@ -26,7 +26,7 @@ class Blog extends React.Component {
             <div className="container">
                 <div className="">
                     <h2 className="card-title">{this.state.blogs[id].name}</h2>
-                    <img className="card-img-top img-thumbnail" src={this.state.blogs[id].img} alt="" />
+                    <img className="card-img-top img-thumbnail" src={this.state.blogs[id].img} />
                     <div className="card-body">
                         <h5>Author: {this.state.blogs[id].author}</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Date Posted: {this.state.blogs[id].date}</h6>
