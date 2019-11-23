@@ -53,10 +53,6 @@ class Navbar extends React.Component {
                         news5: data.articles[arr[5]] && data.articles[arr[5]].title,
                         news6: data.articles[arr[6]] && data.articles[arr[6]].title,
 
-
-
-
-
                     })
                 } else {
                     this.setState({
@@ -81,11 +77,11 @@ class Navbar extends React.Component {
 
 
 
-            <nav className="container" >
+            <nav>
                 <div className="border border-primary" >
                     <ul className="list-group border border-primary"
                         style={
-                            { width: "300px" }
+                            { width: "250px"}
                         } >
                         <li className="list-group-item btn btn-secondary" > < Link to="/" > < h3 > Home </h3></Link > </li> <li className="list-group-item" > <h4 style={
                             { textAlign: "center" }
