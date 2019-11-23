@@ -81,7 +81,7 @@ class Navbar extends React.Component {
                 <div className="border border-primary" >
                     <ul className="list-group border border-primary"
                         style={
-                            { width: "250px"}
+                            { width: "250px", height:"100%", minHeight: "835px"}
                         } >
                         <li className="list-group-item btn btn-secondary" > < Link to="/" > < h3 > Home </h3></Link > </li> <li className="list-group-item" > <h4 style={
                             { textAlign: "center" }
