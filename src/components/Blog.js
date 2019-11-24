@@ -22,11 +22,10 @@ class Blog extends React.Component {
         const id = this.props.match.params.blog
 
         const blog = this.state.blogs ? (
-
             <div className="container">
                 <div className="">
-                    <h2 className="card-title">{this.state.blogs[id].name}</h2>
-                    <img className="card-img-top img-thumbnail" src={this.state.blogs[id].img} />
+                    <h1 className="card-title">{this.state.blogs[id].name}</h1>
+                    <img className="card-img-top img-thumbnail" src={this.state.blogs[id].blogListImg} />
                     <div className="card-body">
                         <h5>Author: {this.state.blogs[id].author}</h5>
                         <h6 className="card-subtitle mb-2 text-muted">Date Posted: {this.state.blogs[id].date}</h6>
