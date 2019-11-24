@@ -23,32 +23,32 @@ class Blog extends React.Component {
 
         const blog = this.state.blogs ? (
             <div className="container">
-                <div className="">
-                    <h1 className="card-title">{this.state.blogs[id].name}</h1>
-                    <img className="card-img-top img-thumbnail" src={this.state.blogs[id].blogListImg} />
-                    <div className="card-body">
-                        <h5>Author: {this.state.blogs[id].author}</h5>
-                        <h6 className="card-subtitle mb-2 text-muted">Date Posted: {this.state.blogs[id].date}</h6>
-                        <p className="card-body">{this.state.blogs[id].description}</p>
-                    </div>
+
+                <h1 className="card-title">{this.state.blogs[id].name}</h1>
+                <img className="card-img-top img-thumbnail" src={this.state.blogs[id].blogListImg} />
+                <div className="card-body">
+                    <h5>Author: {this.state.blogs[id].author}</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Date Posted: {this.state.blogs[id].date}</h6>
+                    <p className="card-body">{this.state.blogs[id].description}</p>
                 </div>
+
             </div>) :
 
             (<div className="center">Loading post......</div>)
 
         return (
             <div>{<Header />}
-            <div className="container" style={{marginTop: "80px"}}>
-                <div className="parent">
-                    <div className="left">
-                        {blog}
-                    </div>
-                    <div className="right">
-                        {<Navbar />}
+                <div className="container" style={{ marginTop: "80px" }}>
+                    <div className="parent">
+                        <div className="left">
+                            {blog}
+                        </div>
+                        <div className="right">
+                            {<Navbar />}
+                        </div>
                     </div>
                 </div>
-            </div>
-           
+
             </div>
         )
     }
