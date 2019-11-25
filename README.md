@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # react-blog-example
 
-A React blog example (see [demo on CodeSandbox](https://codesandbox.io/s/x218ro09vq)).
+A React blog (https://abhisblog.netlify.com/)).
 
 ## Installation
 
