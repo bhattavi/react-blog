@@ -1,5 +1,57 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# react-blog-example
+
+A React blog example (see [demo on CodeSandbox](https://codesandbox.io/s/x218ro09vq)).
+
+## Installation
+
+Clone and enter the project directory:
+
+```sh
+git clone https://github.com/bhattavi/react-blog/.git
+cd react-blog
+```
+
+Prerequisites:
+- [Node.js](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/get-npm) or [yarn](https://nodejs.org/en://yarnpkg.com/en/docs/install)
+
+Install the project dependencies:
+
+```sh
+# npm
+npm install
+
+# yarn
+yarn
+```
+## Run Scripts
+
+Run in development mode:
+
+```sh
+# npm
+npm start
+
+# yarn
+yarn start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view in browser.
+
+Build app for production to the `build` directory:
+
+```sh
+# npm
+npm run build
+
+# yarn
+yarn build
+```
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
