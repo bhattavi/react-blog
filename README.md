@@ -11,7 +11,7 @@ You can also check out the demo video of the site (https://www.youtube.com/watch
 Clone and enter the project directory:
 
 ```sh
-git clone https://github.com/bhattavi/react-blog/.git
+git clone https://github.com/bhattavi/react-blog.git
 cd react-blog
 ```
 
