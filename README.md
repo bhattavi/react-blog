@@ -5,7 +5,6 @@ This is a simple blog site using React and Bootstrap 4 and I have integrated Goo
 
 You can also check out the demo video of the site (https://www.youtube.com/watch?v=jprTgz1VOss&feature=youtu.be)
 
-A React blog (https://abhisblog.netlify.com/)).
 
 ## Installation
 
