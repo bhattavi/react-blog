@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # react-blog
 This is a simple blog site using React and Bootstrap 4 and I have integrated Google news api. I am calling google new api every 5 seconds to fetch new news headlines.
 
+You can also check out the demo video of the site (https://www.youtube.com/watch?v=jprTgz1VOss&feature=youtu.be)
+
 A React blog (https://abhisblog.netlify.com/)).
 
 ## Installation
